@@ -1,0 +1,323 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@400;500&family=Poppins:wght@400;500&family=Roboto+Slab:wght@300;400;500&family=Work+Sans:wght@400;500&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Poppins;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  right: 0;
+  z-index: 1000;
+  padding: 20px 10%;
+}
+header .nav-menu {
+  display: flex;
+}
+header .nav-menu a {
+  padding: 10px 20px;
+  color: #f3f3f3;
+  transition: ease-in-out 0.3s;
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: ease-in-out 0.3s;
+}
+header .nav-menu a:hover {
+  color: #80683a;
+}
+@media screen and (max-width: 960px) {
+  header .nav-menu a {
+    font-size: 15px;
+  }
+  header .nav-menu a:hover {
+    color: #932325;
+  }
+}
+header .nav-menu li {
+  list-style: none;
+}
+@media screen and (max-width: 960px) {
+  header .nav-menu li {
+    margin-bottom: 8px;
+    display: block;
+  }
+}
+@media screen and (max-width: 960px) {
+  header .nav-menu {
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    justify-content: center;
+    background-color: #836b35;
+    display: none;
+    transform: translateY(-200px);
+  }
+  header .nav-menu.active {
+    display: flex;
+  }
+}
+header .logo img {
+  max-width: 160px;
+  height: auto;
+}
+@media screen and (max-width: 768px) {
+  header .logo img {
+    padding-left: 10px;
+  }
+}
+header .button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .button button {
+  background-color: #836b35;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  transition: ease-in-out 0.3s;
+  color: #f3f3f3;
+  font-weight: 500;
+  font-size: 16px;
+  margin-right: 15px;
+}
+header .button button:hover {
+  cursor: pointer;
+  background-color: #5f4d26;
+}
+@media screen and (max-width: 960px) {
+  header .button button {
+    background-color: #836b35;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: none;
+    transition: ease-in-out 0.3s;
+    margin-right: 0;
+  }
+  header .button button:hover {
+    cursor: pointer;
+    background-color: #5f4d26;
+  }
+}
+@media screen and (max-width: 480px) {
+  header .button button {
+    background-color: #836b35;
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: none;
+    transition: ease-in-out 0.3s;
+    margin-right: 0;
+    font-size: 14px;
+  }
+  header .button button:hover {
+    cursor: pointer;
+    background-color: #5f4d26;
+  }
+}
+header .button #menu {
+  font-size: 25px;
+  cursor: pointer;
+  z-index: 1001;
+  color: #f3f3f3;
+  display: none;
+}
+@media screen and (max-width: 960px) {
+  header .button #menu {
+    display: block;
+    margin-left: 15px;
+  }
+}
+@media screen and (max-width: 960px) {
+  header {
+    padding: 10px 20px 10px 0;
+    transition: 0.3s;
+  }
+}
+
+.home .image-container {
+  position: relative; /* Needed for positioning overlay text */
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+}
+.home .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+}
+.home .overlay-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+.home .overlay-text h1 {
+  font-family: "Roboto Slab";
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 10px;
+}
+.home .overlay-text h4 {
+  font-family: "Roboto Slab";
+  font-size: 1.2rem;
+  font-weight: 300;
+  letter-spacing: 25px;
+}
+
+.about-section {
+  margin: 4rem 0 4rem 0;
+}
+.about-section .about-grid {
+  display: grid;
+  padding: 0;
+  margin: 0 4rem 0 4rem;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 3rem;
+}
+.about-section .about-grid .about-image {
+  width: 100%;
+}
+.about-section .about-grid .about-image img {
+  max-width: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1140px) {
+  .about-section .about-grid .about-image img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1140px) {
+  .about-section .about-grid {
+    padding: 0 1.5rem 0 1.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-section .about-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-grid {
+    margin: 0 2rem 0 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-section .about-grid {
+    margin: 0 1rem 0 1rem;
+  }
+}
+.about-section .about-grid .about-text h2 {
+  font-family: Roboto SLab;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 1rem;
+  color: #5a492a;
+}
+@media screen and (max-width: 1250px) {
+  .about-section .about-grid .about-text h2 {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-section .about-grid .about-text h2 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .about-section .about-grid .about-text h2 {
+    font-size: 2rem;
+  }
+}
+.about-section .about-grid .about-text p {
+  font-size: 1rem;
+  font-weight: 300;
+  margin-top: 1rem;
+  color: rgb(39, 39, 39);
+  line-height: 30px;
+}
+@media screen and (max-width: 1250px) {
+  .about-section .about-grid .about-text p {
+    font-size: 0.8rem;
+    line-height: 25px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .about-section .about-grid .about-text p {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .about-section .about-grid .about-text p {
+    font-size: 0.9rem;
+    line-height: 25px;
+  }
+}
+.about-section .about-grid .about-text p span {
+  font-weight: 500;
+}
+.about-section .about-grid .about-text button {
+  color: #f3f3f3;
+  margin: 1rem 0 0 0;
+  font-size: 1rem;
+  background-color: #836b35;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  transition: ease-in-out 0.3s;
+}
+.about-section .about-grid .about-text button:hover {
+  cursor: pointer;
+  background-color: #5f4d26;
+}
+
+.rooms-section {
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+.rooms-section h3 {
+  font-family: Roboto Slab;
+  font-weight: 300;
+  color: #5a492a;
+  font-size: 3rem;
+  text-align: center;
+}
+.rooms-section .room-cards {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+.rooms-section .room-cards img {
+  width: 100%;
+}
+.rooms-section .room-cards h4 {
+  font-size: 1.5rem;
+  font-family: Roboto Slab;
+  font-weight: 500;
+  margin: 1rem 0 1rem 0;
+}
+.rooms-section .room-cards p {
+  color: rgb(39, 39, 39);
+  font-size: 1rem;
+}/*# sourceMappingURL=style.css.map */
