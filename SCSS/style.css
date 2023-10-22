@@ -295,6 +295,11 @@ header .button #menu {
   background-color: #f8f8f8;
   padding: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .rooms-section {
+    padding: 1.2rem;
+  }
+}
 .rooms-section h3 {
   font-family: Roboto Slab;
   font-weight: 300;
@@ -302,14 +307,37 @@ header .button #menu {
   font-size: 3rem;
   text-align: center;
 }
+@media screen and (max-width: 768px) {
+  .rooms-section h3 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rooms-section h3 {
+    font-size: 1.5rem;
+  }
+}
 .rooms-section .room-cards {
   padding: 2rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 }
+@media screen and (max-width: 768px) {
+  .rooms-section .room-cards {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 1rem;
+    align-content: center;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rooms-section .room-cards {
+    grid-template-columns: 1fr;
+  }
+}
 .rooms-section .room-cards img {
   width: 100%;
+  max-width: 100%;
 }
 .rooms-section .room-cards h4 {
   font-size: 1.5rem;
@@ -317,7 +345,93 @@ header .button #menu {
   font-weight: 500;
   margin: 1rem 0 1rem 0;
 }
+@media screen and (max-width: 480px) {
+  .rooms-section .room-cards h4 {
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 0.5rem 0 0.5rem 0;
+  }
+}
 .rooms-section .room-cards p {
   color: rgb(39, 39, 39);
   font-size: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .rooms-section .room-cards p {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .rooms-section .room-cards p {
+    text-align: center;
+  }
+}
+
+.amenities-section {
+  padding: 2rem;
+}
+.amenities-section h4 {
+  font-family: Roboto Slab;
+  font-weight: 300;
+  color: #5a492a;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .amenities-section h4 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .amenities-section h4 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+}
+.amenities-section .amenities-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+}
+.amenities-section .amenities-grid img {
+  width: 100%;
+}
+@media screen and (max-width: 768px) {
+  .amenities-section .amenities-grid {
+    grid-template-columns: 1fr;
+  }
+}
+.amenities-section .amenities-grid .amenities-side {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  gap: 2rem;
+}
+@media screen and (max-width: 768px) {
+  .amenities-section .amenities-grid .amenities-side {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .amenities-section .amenities-grid .amenities-side {
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .amenities-section .amenities-grid .amenities-side .amentities {
+    text-align: center;
+  }
+}
+.amenities-section .amenities-grid .amenities-side .amentities i {
+  font-size: 3rem;
+  color: #5a492a;
+  margin-bottom: 1rem;
+}
+.amenities-section .amenities-grid .amenities-side .amentities h5 {
+  font-family: Roboto Slab;
+  font-size: 1rem;
+  font-weight: 500;
+  color: rgb(39, 39, 39);
+  margin-bottom: 1rem;
 }/*# sourceMappingURL=style.css.map */

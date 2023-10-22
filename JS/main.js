@@ -95,6 +95,7 @@ updateImage();
 
 
 
+
 //Function to make Animation on Scroll
 function animateOnScroll(elements) {
     const observer = new IntersectionObserver((entries, observer) => {
@@ -113,13 +114,13 @@ function animateOnScroll(elements) {
 
 // const aboutSection = document.querySelectorAll('.about-section');
 const roomSection = document.querySelectorAll('.room-cards');
-const menuSection = document.querySelectorAll('.menu-grid');
+const amenitiesSection = document.querySelectorAll('.amenities-grid');
 const interiorSection = document.querySelectorAll('.interior-grid');
 const dishesSection = document.querySelectorAll('.drink-dishes');
 
 // animateOnScroll(aboutSection);
 animateOnScroll(roomSection);
-animateOnScroll(interiorSection);
+animateOnScroll(amenitiesSection);
 animateOnScroll(menuSection);
 animateOnScroll(dishesSection);
 

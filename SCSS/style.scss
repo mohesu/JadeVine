@@ -254,12 +254,21 @@ header{
 .rooms-section{
     background-color: $color-7;
     padding: 2rem;
+    @include md{
+        padding: 1.2rem;
+    }
     h3{
         font-family: Roboto Slab;
         font-weight: 300;
         color: $color-6;
         font-size: 3rem;
         text-align: center;
+        @include md{
+            font-size: 2rem;
+        }
+        @include sm{
+            font-size: 1.5rem;
+        }
     }
 
     .room-cards{
@@ -268,18 +277,98 @@ header{
         grid-template-columns: repeat(3, 1fr);
         gap: 2rem;
 
+        @include md{
+            grid-template-columns: repeat(2, 1fr);
+            padding: 1rem;
+            align-content: center;
+        }
+        @include sm{
+            grid-template-columns: 1fr;
+        }
         img{
             width: 100%;
+            max-width: 100%;
         }
         h4{
             font-size: 1.5rem;
             font-family: Roboto Slab;
             font-weight: 500;
             margin: 1rem 0 1rem 0;
+            @include sm{
+                text-align: center;
+                font-size: 1.2rem;
+                margin: 0.5rem 0 0.5rem 0;
+            }
         }
         p{
             color: $color-8;
             font-size: 1rem;
+            @include md{
+                font-size: 0.9rem;
+            }
+            @include sm{
+                text-align: center;
+            }
+        }
+    }
+}
+
+.amenities-section{
+    padding: 2rem;
+    h4{
+        font-family: Roboto Slab;
+        font-weight: 300;
+        color: $color-6;
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        @include md{
+            font-size: 2rem;
+        }
+        @include sm{
+            font-size: 1.5rem;
+            text-align: center;
+        }
+    }
+    .amenities-grid{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2rem;
+        img{
+            width: 100%;
+        }
+        @include md{
+            grid-template-columns: 1fr;
+        }
+        .amenities-side{
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            align-items: center;
+            gap: 2rem;
+            @include md{
+                grid-template-columns: repeat(2,1fr);
+                gap: 1rem;
+            }
+            @include sm{
+                grid-template-columns: 1fr;
+            }
+            .amentities{
+                @include sm{
+                    text-align: center;
+                }
+                i{
+                    font-size: 3rem;
+                    color: $color-6;
+                    margin-bottom: 1rem;
+                }
+                h5{
+                    font-family: Roboto Slab;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    color: $color-8;
+                    margin-bottom: 1rem;
+                }
+            }
+
         }
     }
 }
