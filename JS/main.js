@@ -101,7 +101,7 @@ function animateOnScroll(elements) {
     const observer = new IntersectionObserver((entries, observer) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+          entry.target.classList.add('animate__animated', 'animate__fadeIn');
           observer.unobserve(entry.target);
         }
       });
@@ -123,10 +123,4 @@ animateOnScroll(roomSection);
 animateOnScroll(amenitiesSection);
 animateOnScroll(menuSection);
 animateOnScroll(dishesSection);
-
-
-
-
-
-
 

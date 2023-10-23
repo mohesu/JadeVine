@@ -21,3 +21,15 @@
     justify-content: center;
     align-items: center;
 }
+@mixin commonEffect($top, $left){
+    &::after{
+        content: '';
+        position: absolute;
+        top: $top;
+        left: $left;
+        height: 7px;
+        width: 50px;
+        background-color:$button-color; 
+        transform: translateY(-50%);
+    }
+}

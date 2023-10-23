@@ -161,7 +161,7 @@ header .button #menu {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7); /* Adjust opacity as needed */
+  background-color: rgba(0, 0, 0, 0.349); /* Adjust opacity as needed */
 }
 .home .overlay-text {
   position: absolute;
@@ -184,10 +184,10 @@ header .button #menu {
   letter-spacing: 25px;
 }
 
-.about-section {
+.about-section, .menu-section {
   margin: 4rem 0 4rem 0;
 }
-.about-section .about-grid {
+.about-section .about-grid, .about-section .menu-grid, .menu-section .about-grid, .menu-section .menu-grid {
   display: grid;
   padding: 0;
   margin: 0 4rem 0 4rem;
@@ -195,39 +195,39 @@ header .button #menu {
   align-items: center;
   gap: 3rem;
 }
-.about-section .about-grid .about-image {
+.about-section .about-grid .about-image, .about-section .about-grid .menu-image, .about-section .menu-grid .about-image, .about-section .menu-grid .menu-image, .menu-section .about-grid .about-image, .menu-section .about-grid .menu-image, .menu-section .menu-grid .about-image, .menu-section .menu-grid .menu-image {
   width: 100%;
 }
-.about-section .about-grid .about-image img {
+.about-section .about-grid .about-image img, .about-section .about-grid .menu-image img, .about-section .menu-grid .about-image img, .about-section .menu-grid .menu-image img, .menu-section .about-grid .about-image img, .menu-section .about-grid .menu-image img, .menu-section .menu-grid .about-image img, .menu-section .menu-grid .menu-image img {
   max-width: 100%;
   width: 100%;
 }
 @media screen and (max-width: 1140px) {
-  .about-section .about-grid .about-image img {
+  .about-section .about-grid .about-image img, .about-section .about-grid .menu-image img, .about-section .menu-grid .about-image img, .about-section .menu-grid .menu-image img, .menu-section .about-grid .about-image img, .menu-section .about-grid .menu-image img, .menu-section .menu-grid .about-image img, .menu-section .menu-grid .menu-image img {
     width: 100%;
   }
 }
 @media screen and (max-width: 1140px) {
-  .about-section .about-grid {
+  .about-section .about-grid, .about-section .menu-grid, .menu-section .about-grid, .menu-section .menu-grid {
     padding: 0 1.5rem 0 1.5rem;
   }
 }
 @media screen and (max-width: 960px) {
-  .about-section .about-grid {
+  .about-section .about-grid, .about-section .menu-grid, .menu-section .about-grid, .menu-section .menu-grid {
     grid-template-columns: 1fr;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-section .about-grid {
+  .about-section .about-grid, .about-section .menu-grid, .menu-section .about-grid, .menu-section .menu-grid {
     margin: 0 2rem 0 2rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .about-section .about-grid {
+  .about-section .about-grid, .about-section .menu-grid, .menu-section .about-grid, .menu-section .menu-grid {
     margin: 0 1rem 0 1rem;
   }
 }
-.about-section .about-grid .about-text h2 {
+.about-section .about-grid .about-text h2, .about-section .about-grid .menu-text h2, .about-section .menu-grid .about-text h2, .about-section .menu-grid .menu-text h2, .menu-section .about-grid .about-text h2, .menu-section .about-grid .menu-text h2, .menu-section .menu-grid .about-text h2, .menu-section .menu-grid .menu-text h2 {
   font-family: Roboto SLab;
   font-size: 2.5rem;
   font-weight: 300;
@@ -235,21 +235,21 @@ header .button #menu {
   color: #5a492a;
 }
 @media screen and (max-width: 1250px) {
-  .about-section .about-grid .about-text h2 {
+  .about-section .about-grid .about-text h2, .about-section .about-grid .menu-text h2, .about-section .menu-grid .about-text h2, .about-section .menu-grid .menu-text h2, .menu-section .about-grid .about-text h2, .menu-section .about-grid .menu-text h2, .menu-section .menu-grid .about-text h2, .menu-section .menu-grid .menu-text h2 {
     font-size: 1.5rem;
   }
 }
 @media screen and (max-width: 960px) {
-  .about-section .about-grid .about-text h2 {
+  .about-section .about-grid .about-text h2, .about-section .about-grid .menu-text h2, .about-section .menu-grid .about-text h2, .about-section .menu-grid .menu-text h2, .menu-section .about-grid .about-text h2, .menu-section .about-grid .menu-text h2, .menu-section .menu-grid .about-text h2, .menu-section .menu-grid .menu-text h2 {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 480px) {
-  .about-section .about-grid .about-text h2 {
+  .about-section .about-grid .about-text h2, .about-section .about-grid .menu-text h2, .about-section .menu-grid .about-text h2, .about-section .menu-grid .menu-text h2, .menu-section .about-grid .about-text h2, .menu-section .about-grid .menu-text h2, .menu-section .menu-grid .about-text h2, .menu-section .menu-grid .menu-text h2 {
     font-size: 2rem;
   }
 }
-.about-section .about-grid .about-text p {
+.about-section .about-grid .about-text p, .about-section .about-grid .menu-text p, .about-section .menu-grid .about-text p, .about-section .menu-grid .menu-text p, .menu-section .about-grid .about-text p, .menu-section .about-grid .menu-text p, .menu-section .menu-grid .about-text p, .menu-section .menu-grid .menu-text p {
   font-size: 1rem;
   font-weight: 300;
   margin-top: 1rem;
@@ -257,26 +257,26 @@ header .button #menu {
   line-height: 30px;
 }
 @media screen and (max-width: 1250px) {
-  .about-section .about-grid .about-text p {
+  .about-section .about-grid .about-text p, .about-section .about-grid .menu-text p, .about-section .menu-grid .about-text p, .about-section .menu-grid .menu-text p, .menu-section .about-grid .about-text p, .menu-section .about-grid .menu-text p, .menu-section .menu-grid .about-text p, .menu-section .menu-grid .menu-text p {
     font-size: 0.8rem;
     line-height: 25px;
   }
 }
 @media screen and (max-width: 960px) {
-  .about-section .about-grid .about-text p {
+  .about-section .about-grid .about-text p, .about-section .about-grid .menu-text p, .about-section .menu-grid .about-text p, .about-section .menu-grid .menu-text p, .menu-section .about-grid .about-text p, .menu-section .about-grid .menu-text p, .menu-section .menu-grid .about-text p, .menu-section .menu-grid .menu-text p {
     font-size: 1rem;
   }
 }
 @media screen and (max-width: 768px) {
-  .about-section .about-grid .about-text p {
+  .about-section .about-grid .about-text p, .about-section .about-grid .menu-text p, .about-section .menu-grid .about-text p, .about-section .menu-grid .menu-text p, .menu-section .about-grid .about-text p, .menu-section .about-grid .menu-text p, .menu-section .menu-grid .about-text p, .menu-section .menu-grid .menu-text p {
     font-size: 0.9rem;
     line-height: 25px;
   }
 }
-.about-section .about-grid .about-text p span {
+.about-section .about-grid .about-text p span, .about-section .about-grid .menu-text p span, .about-section .menu-grid .about-text p span, .about-section .menu-grid .menu-text p span, .menu-section .about-grid .about-text p span, .menu-section .about-grid .menu-text p span, .menu-section .menu-grid .about-text p span, .menu-section .menu-grid .menu-text p span {
   font-weight: 500;
 }
-.about-section .about-grid .about-text button {
+.about-section .about-grid .about-text button, .about-section .about-grid .menu-text button, .about-section .menu-grid .about-text button, .about-section .menu-grid .menu-text button, .menu-section .about-grid .about-text button, .menu-section .about-grid .menu-text button, .menu-section .menu-grid .about-text button, .menu-section .menu-grid .menu-text button {
   color: #f3f3f3;
   margin: 1rem 0 0 0;
   font-size: 1rem;
@@ -286,7 +286,7 @@ header .button #menu {
   border: none;
   transition: ease-in-out 0.3s;
 }
-.about-section .about-grid .about-text button:hover {
+.about-section .about-grid .about-text button:hover, .about-section .about-grid .menu-text button:hover, .about-section .menu-grid .about-text button:hover, .about-section .menu-grid .menu-text button:hover, .menu-section .about-grid .about-text button:hover, .menu-section .about-grid .menu-text button:hover, .menu-section .menu-grid .about-text button:hover, .menu-section .menu-grid .menu-text button:hover {
   cursor: pointer;
   background-color: #5f4d26;
 }
@@ -297,7 +297,7 @@ header .button #menu {
 }
 @media screen and (max-width: 768px) {
   .rooms-section {
-    padding: 1.2rem;
+    padding: 1rem;
   }
 }
 .rooms-section h3 {
@@ -322,6 +322,11 @@ header .button #menu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
+}
+@media screen and (max-width: 480px) {
+  .rooms-section .room-cards {
+    padding: 1rem;
+  }
 }
 @media screen and (max-width: 768px) {
   .rooms-section .room-cards {
@@ -370,6 +375,11 @@ header .button #menu {
 .amenities-section {
   padding: 2rem;
 }
+@media screen and (max-width: 480px) {
+  .amenities-section {
+    padding: 1rem;
+  }
+}
 .amenities-section h4 {
   font-family: Roboto Slab;
   font-weight: 300;
@@ -396,9 +406,14 @@ header .button #menu {
 .amenities-section .amenities-grid img {
   width: 100%;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1140px) {
   .amenities-section .amenities-grid {
     grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 480px) {
+  .amenities-section .amenities-grid {
+    gap: 1rem;
   }
 }
 .amenities-section .amenities-grid .amenities-side {
@@ -434,4 +449,121 @@ header .button #menu {
   font-weight: 500;
   color: rgb(39, 39, 39);
   margin-bottom: 1rem;
+}
+
+.menu-section {
+  background-color: #f8f8f8;
+}
+
+.footer-section {
+  background-size: cover;
+  background-position: center;
+}
+.footer-section .footer-flex {
+  display: flex;
+  justify-content: center;
+}
+@media screen and (max-width: 960px) {
+  .footer-section .footer-flex {
+    flex-direction: column;
+  }
+}
+.footer-section .footer-flex .footer-details {
+  padding: 40px;
+}
+.footer-section .footer-flex .footer-details h1 {
+  font-size: 2rem;
+  position: relative;
+}
+.footer-section .footer-flex .footer-details p {
+  color: grey;
+  padding: 15px 15px 15px 0;
+}
+.footer-section .footer-flex .footer-details a {
+  color: #836b35;
+  font-size: 2.5rem;
+  margin-right: 8px;
+}
+.footer-section .footer-flex .footer-details h3 {
+  position: relative;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+.footer-section .footer-flex .footer-details li {
+  color: grey;
+  padding: 10px 10px 10px 0;
+}
+.footer-section .footer-flex .contact-details {
+  padding: 40px;
+}
+.footer-section .footer-flex .contact-details #contact {
+  position: relative;
+}
+.footer-section .footer-flex .contact-details .details li {
+  margin: 10px 10px 15px 0;
+  font-weight: 500;
+  color: grey;
+}
+.footer-section .footer-flex .contact-details .book-form {
+  padding: 2rem 1.5rem 2.5rem 2.5rem;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4235294118);
+}
+@media screen and (max-width: 768px) {
+  .footer-section .footer-flex .contact-details .book-form {
+    padding-right: 2.5rem;
+  }
+}
+.footer-section .footer-flex .contact-details .book-form h1 {
+  margin: 0.2rem;
+  font-size: 2rem;
+  position: relative;
+}
+.footer-section .footer-flex .contact-details .book-form form input {
+  padding: 0.8rem;
+  margin: 0.2rem;
+  max-width: 100%;
+  width: 45%;
+  outline: none;
+  transition: ease-in-out 0.3s;
+}
+.footer-section .footer-flex .contact-details .book-form form input:focus {
+  border: 2px solid #836b35;
+}
+@media screen and (max-width: 768px) {
+  .footer-section .footer-flex .contact-details .book-form form input {
+    width: 100%;
+  }
+}
+.footer-section .footer-flex .contact-details .book-form form textarea {
+  margin: 0.2rem;
+  padding: 0.8rem;
+  outline: none;
+  transition: ease-in-out 0.3s;
+}
+.footer-section .footer-flex .contact-details .book-form form textarea:focus {
+  outline: 2px solid #836b35;
+}
+@media screen and (max-width: 960px) {
+  .footer-section .footer-flex .contact-details .book-form form textarea {
+    width: 92%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .footer-section .footer-flex .contact-details .book-form form textarea {
+    width: 100%;
+  }
+}
+.footer-section .footer-flex .contact-details .book-form form button {
+  background-color: #5a492a;
+  padding: 10px 35px;
+  border-radius: 5px;
+  border: none;
+  transition: ease-in-out 0.3s;
+  margin: 0.2rem;
+  color: #f3f3f3;
+}
+.footer-section .footer-flex .contact-details .book-form form button:hover {
+  cursor: pointer;
+  background-color: #372d1a;
 }/*# sourceMappingURL=style.css.map */
