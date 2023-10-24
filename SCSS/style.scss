@@ -142,7 +142,7 @@ header{
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: rgba(0, 0, 0, 0.249); /* Adjust opacity as needed */
+            background-color: rgba(0, 0, 0, 0.549); /* Adjust opacity as needed */
         }
 
       .overlay-text {
@@ -395,10 +395,28 @@ header{
     .footer-flex{
         display: flex;
         justify-content: center;
+        align-items: center;
         @include custom(960px){
             flex-direction: column;
         }
-        
+
+        .map-container{
+            position: relative;
+            width: 100%;
+            overflow: hidden;
+            padding-top: 56.25%;
+            
+            .map{
+                position: absolute;
+                top: 0;
+                left: 0;
+                bottom: 0;
+                right: 0;
+                width: 100%;
+                height: 100%;
+                border: none;
+            }
+        }
         .footer-details{
             padding: 40px;
             
@@ -445,60 +463,7 @@ header{
                     color: grey;
                 }
             }
-            .book-form{
-
-                // border: 2px solid black;
-                padding: 2rem 1.5rem 2.5rem 2.5rem;
-                border-radius: 5px;
-                @include md{
-                    padding-right: 2.5rem;
-                }
-                box-shadow: 0px 0px 3px #0000006c;
-                h1{
-                    margin: 0.2rem;
-                    font-size: 2rem;
-                    position: relative;
-                    
-                }
-                
-                form{
-                    input{
-                        padding: 0.8rem;
-                        margin: 0.2rem;
-                        max-width: 100%;
-                        width: 45%;
-                        outline: none;
-                        transition: ease-in-out 0.3s;
-                        &:focus{
-                            border: 2px solid $button-color;
-                        }
-                        @include md{
-                            width: 100%;
-                        }
-                    }
-                    textarea{
-                        margin: 0.2rem;
-                        padding: 0.8rem;
-                        outline: none;
-                        transition: ease-in-out 0.3s;
-                        
-                        &:focus{
-                            outline: 2px solid $button-color;
-                        }
-                        @include lg{
-                            width: 92%
-                        }
-                        @include md{
-                            width: 100%
-                        }
-                    }
-                    button{
-                        @include commonButton(10px, 35px, $color-6);
-                        margin: 0.2rem;
-                        color: $color-2;
-                    }
-                }
-            }
+            
         }
     }
 }

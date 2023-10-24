@@ -161,7 +161,7 @@ header .button #menu {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.249); /* Adjust opacity as needed */
+  background-color: rgba(0, 0, 0, 0.549); /* Adjust opacity as needed */
 }
 .home .overlay-text {
   position: absolute;
@@ -462,11 +462,28 @@ header .button #menu {
 .footer-section .footer-flex {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 @media screen and (max-width: 960px) {
   .footer-section .footer-flex {
     flex-direction: column;
   }
+}
+.footer-section .footer-flex .map-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  padding-top: 56.25%;
+}
+.footer-section .footer-flex .map-container .map {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
 }
 .footer-section .footer-flex .footer-details {
   padding: 40px;
@@ -503,67 +520,4 @@ header .button #menu {
   margin: 10px 10px 15px 0;
   font-weight: 500;
   color: grey;
-}
-.footer-section .footer-flex .contact-details .book-form {
-  padding: 2rem 1.5rem 2.5rem 2.5rem;
-  border-radius: 5px;
-  box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.4235294118);
-}
-@media screen and (max-width: 768px) {
-  .footer-section .footer-flex .contact-details .book-form {
-    padding-right: 2.5rem;
-  }
-}
-.footer-section .footer-flex .contact-details .book-form h1 {
-  margin: 0.2rem;
-  font-size: 2rem;
-  position: relative;
-}
-.footer-section .footer-flex .contact-details .book-form form input {
-  padding: 0.8rem;
-  margin: 0.2rem;
-  max-width: 100%;
-  width: 45%;
-  outline: none;
-  transition: ease-in-out 0.3s;
-}
-.footer-section .footer-flex .contact-details .book-form form input:focus {
-  border: 2px solid #836b35;
-}
-@media screen and (max-width: 768px) {
-  .footer-section .footer-flex .contact-details .book-form form input {
-    width: 100%;
-  }
-}
-.footer-section .footer-flex .contact-details .book-form form textarea {
-  margin: 0.2rem;
-  padding: 0.8rem;
-  outline: none;
-  transition: ease-in-out 0.3s;
-}
-.footer-section .footer-flex .contact-details .book-form form textarea:focus {
-  outline: 2px solid #836b35;
-}
-@media screen and (max-width: 960px) {
-  .footer-section .footer-flex .contact-details .book-form form textarea {
-    width: 92%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .footer-section .footer-flex .contact-details .book-form form textarea {
-    width: 100%;
-  }
-}
-.footer-section .footer-flex .contact-details .book-form form button {
-  background-color: #5a492a;
-  padding: 10px 35px;
-  border-radius: 5px;
-  border: none;
-  transition: ease-in-out 0.3s;
-  margin: 0.2rem;
-  color: #f3f3f3;
-}
-.footer-section .footer-flex .contact-details .book-form form button:hover {
-  cursor: pointer;
-  background-color: #372d1a;
 }/*# sourceMappingURL=style.css.map */
