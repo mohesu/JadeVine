@@ -625,6 +625,11 @@ header .button #menu {
   width: 100%;
   padding: 1rem;
 }
+@media screen and (max-width: 480px) {
+  .pictures-grid .sub-grid img {
+    padding: 0.5rem;
+  }
+}
 @media screen and (max-width: 960px) {
   .pictures-grid .sub-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -633,6 +638,7 @@ header .button #menu {
 @media screen and (max-width: 480px) {
   .pictures-grid .sub-grid {
     grid-template-columns: 1fr;
+    padding: 0;
   }
 }
 @media screen and (max-width: 480px) {

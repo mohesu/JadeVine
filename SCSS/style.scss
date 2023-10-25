@@ -559,6 +559,9 @@ header{
         img {
             width: 100%;
             padding: 1rem;
+            @include sm {
+                padding: 0.5rem;
+            }
         }
 
         @include lg {
@@ -567,6 +570,7 @@ header{
 
         @include sm {
             grid-template-columns: 1fr;
+            padding: 0;
         }
     }
 
