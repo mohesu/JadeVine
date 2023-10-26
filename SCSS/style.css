@@ -550,22 +550,8 @@ header .button #menu {
 }
 
 .gallery-home {
-  background-image: url("../Rest/building.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.gallery-home .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.649); /* Adjust opacity as needed */
+  height: 15vh;
+  background-color: #44261e;
 }
 .gallery-home .overlay-text {
   text-align: center;
